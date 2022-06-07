@@ -25,11 +25,7 @@ client.on("message", (msg) => {
   if (msg.content.toLowerCase() === `${BOT_PREFIX}${BOT_COMMANDS.add_role}`) {
     addRole(msg.member);
   }
-  if (
-    msg.content === "I love you, Bubi" ||
-    msg.content === "I love you" ||
-    msg.content === "Te iubesc"
-  ) {
+  if (msg.content === "I love you, Bubi") {
     msg.react("❤️");
   }
 });
