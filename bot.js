@@ -1,5 +1,4 @@
 require("dotenv").config();
-require("./commands/roles/give-role.js");
 
 const Discord = require("discord.js");
 const client = new Discord.Client(
@@ -13,12 +12,6 @@ const BOT_PREFIX = ">";
 const BOT_COMMANDS = {
   add_role: "mode-me",
 };
-const reactToMessages = [
-  "I love you, bubi",
-  "I love you, Bubi",
-  "I love you",
-  "Te iubesc",
-];
 
 // bot events
 client.on("ready", () => {
